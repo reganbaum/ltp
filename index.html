@@ -1,35 +1,136 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>LTP</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
-  <link href='./css/midterm.css' rel='stylesheet' />
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LTP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
+  </head>
 
-<body class='home-body'>
-  <!-- <div class='links'>
-    <a class='link active' href='index.html'>Home</a>
-    <a class='link' href='about-me.html'>About</a>
-    <a class='link' href='labs/index.html'>Labs</a>
-  </div> -->
-  <section>
-    <h1>LTP</h1>
-    <h1>Literacy Through Photography</h1>
-    <h2>LTP is a student-centered teaching methodology that promotes participation, collaboration, creativity, and self-expression through photos and writing.  LTP gives students the freedom to share their stories and grow as collaborators, creators, and problem-solvers.  Scroll down to learn about the benefits of LTP and check out some example projects.</h2>
-  </section>
+  <body class="home-body">
+    <div class="nav-and-landing">
+      <div class="tm-header">
+        <div
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropdown"
+        >
+          <nav class="uk-navbar-container">
+            <div class="uk-container uk-container-expand">
+              <div uk-navbar>
+                <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo ltp-logo" href="#">LTP</a>
+                </div>
+                <div class="uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li><a href="#ltp">What is LTP?</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li>
+                      <a href="#projects">Projects</a>
+                      <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <!-- <li class="uk-active"><a href="#">Active</a></li> -->
+                          <li>
+                            <a href="projects/alphabets.html">Alphabets</a>
+                          </li>
+                          <li><a href="projects/handmaps.html">Handmaps</a></li>
+                          <li>
+                            <a href="projects/unselfies.html">Unselfies</a>
+                          </li>
+                          <li>
+                            <a href="projects/cs101.html">ABCs of CS101</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-  <section>
-    <h1>Benefits of LTP</h1>
-    <h2>There are numerous benefits of using LTP as a way to learn and build community.  Here are just a few:</h2>
+      <div class="home-landing">
+        <h1 class="ltp-home">LTP</h1>
+        <h1 class="home-title">
+          <span class="initial">L</span>iteracy
+          <span class="initial">T</span>hrough
+          <span class="initial">P</span>hotography
+        </h1>
+      </div>
+    </div>
 
-  </section>
+    <section id="ltp">
+      <h1>What is <span class="initial-dark">LTP</span>?</h1>
+      <h2>
+        LTP is a <span class="highlight">student-centered</span> teaching
+        methodology that promotes participation, collaboration,
+        <span class="highlight">creativity</span>, and
+        <span class="highlight">self-expression</span>
+        through photos and writing. LTP gives students the
+        <span class="highlight">freedom</span> to share their stories and
+        <span class="highlight">grow</span> as
+        <span class="highlight">collaborators</span>, creators, and
+        <span class="highlight">problem-solvers</span>. Scroll down to learn
+        about the benefits of LTP and check out some example projects.
+      </h2>
+    </section>
 
-  <section>
-    <h1>LTP Projects</h1>
-    <h2>Below is a range of LTP projects that anyone can implement in their own classroom or community.  Select a project to view its complete lesson plan.  Keep in mind, the lesson plans are only suggestions and can be modified as needed.  Creativity is encouraged for students and teachers alike.</h2>
+    <section id="benefits">
+      <h1>Benefits of <span class="initial-dark">LTP</span></h1>
+      <h2>
+        There are numerous benefits of using LTP as a way to learn and build
+        community. Here are just a few:
+      </h2>
 
-  </section>
-</body>
+      <div class="flex-container">
+        <div class="button-container">
+          <div class="ben-btn" id="ben-1" onclick="showExp(1)" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">Creating a More Complete Story</div>
+          <div class="ben-btn" id="ben-2" onclick="showExp(2)" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Honing Observation Skills</div>
+          <div class="ben-btn" id="ben-3" onclick="showExp(3)" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Practicing Creativity</div>
+          <div class="ben-btn" id="ben-4" onclick="showExp(4)" data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">Cultivating Community</div>
+          <div class="ben-btn" id="ben-5" onclick="showExp(5)" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">Motivating Students</div>
+          <div class="ben-btn" id="ben-6" onclick="showExp(6)" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">Promoting Self-Confidence</div>
+        </div>
+        <div id="explaination"></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1><span class="initial-dark">LTP</span> Projects</h1>
+      <h2>
+        Below are some examples of LTP projects. Select a project to view its complete lesson
+        plan. Keep in mind, lesson plans are only suggestions and can be
+        modified as needed. Creativity is encouraged for students and teachers
+        alike!
+      </h2>
+
+      <div class="proj-container">
+          <a href="projects/alphabets.html" class="proj-btn" id='alpha' data-aos="fade-up" data-aos-delay="0" data-aos-duration="800">
+            <h2>Alphabets</h2>
+          </a>
+          <a href="projects/handmaps.html" class="proj-btn" id='hand' data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <h2>Handmaps</h2>
+          </a>
+            <a href="projects/cs101.html" class="proj-btn" id='cs101' data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                <h2>ABCs of CS101</h2>
+            </a>
+        </div>
+      </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src = 'js/home.js'></script>
+  </body>
 </html>
