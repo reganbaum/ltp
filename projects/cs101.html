@@ -1,19 +1,295 @@
 <!DOCTYPE html>
-<html lang='en'>
-<head>
-  <!-- TODO -->
-  <meta charset='UTF-8' />
-  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <title>LTP</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css" />
-  <link href='./css/midterm.css' rel='stylesheet' />
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LTP - ABCs of CS101</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link href="../css/home.css" rel="stylesheet" />
+    <link href="../css/cs101.css" rel="stylesheet" />
+  </head>
 
-<body class='home-body'>
-  <!-- <div class='links'>
-    <a class='link active' href='index.html'>Home</a>
-    <a class='link' href='about-me.html'>About</a>
-    <a class='link' href='labs/index.html'>Labs</a>
-  </div> -->
-</body>
+  <body>
+    <div class="nav-and-cs101">
+      <div class="tm-header">
+        <div
+          uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #scrollup-dropdown"
+        >
+          <nav class="uk-navbar-container">
+            <div class="uk-container uk-container-expand">
+              <div uk-navbar>
+                <div class="uk-navbar-left">
+                  <a class="uk-navbar-item uk-logo ltp-logo" href="#">LTP</a>
+                </div>
+                <div class="uk-navbar-right">
+                  <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#ltp">What is LTP?</a></li>
+                    <li><a href="../index.html#benefits">Benefits</a></li>
+                    <li class="uk-active">
+                      <a href="../index.html#projects">Projects</a>
+                      <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li>
+                            <a href="alphabets.html">Alphabets</a>
+                          </li>
+                          <li><a href="handmaps.html">Handmaps</a></li>
+                          <li class="uk-active">
+                            <a href="#">ABCs of CS101</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="cs101-landing">
+        <h1 class="cs101-header">ABCs of CS101</h1>
+        <div
+          class="cs101-desc"
+          data-aos="flip-up"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          <h2>
+            LTP project proposal designed for the introductory computer science
+            class &lpar;CS101&rpar; at Duke University
+          </h2>
+          <h3>Developed by Regan Baum</h3>
+        </div>
+      </div>
+    </div>
+
+    <section class="cs101-goals">
+      <h1><span class="initial-dark">G</span>oals</h1>
+      <div class="goals-grid">
+        <h2
+          class="goal"
+          id="g1"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          Students will <span class="highlight">collaboratively create</span> a
+          new study tool for CS101.
+        </h2>
+        <h2
+          class="goal"
+          id="g2"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          Students will <span class="highlight">think deeply</span> about their
+          experiences with specific topics in CS101.
+        </h2>
+        <h2
+          class="goal"
+          id="g3"
+          data-aos="fade-right"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          Students will gain a better understanding of the
+          <span class="highlight">big picture</span> ideas of CS101.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Card flip code is from https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+    <section class="cs101-details">
+      <h1 class="details-title"><span class="initial">D</span>etails</h1>
+      <div class="cards">
+        <div
+          class="flip-card"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Location</h1>
+            </div>
+            <div class="flip-card-back">
+              <h2>CS101 classrooms and surrounding Duke campus</h2>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flip-card"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Participants</h1>
+            </div>
+            <div class="flip-card-back">
+              <h2>CS101 students at Duke</h2>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flip-card"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Duration</h1>
+            </div>
+            <div class="flip-card-back">
+              <h2>Two lab sessions &lpar;approx. 2.5 hrs&rpar;</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs101-materials">
+      <h1><span class="initial-dark">M</span>aterials</h1>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Phones&sol;Cameras
+      </h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Printer
+      </h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Construction Paper
+      </h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Scissors
+      </h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Glue
+      </h2>
+      <h2 data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        Markers
+      </h2>
+    </section>
+
+    <section class="cs101-details">
+      <h1 class="details-title"><span class="initial">S</span>teps</h1>
+      <div class="labs-container">
+        <div class="lab" id='lab1' data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+          <h2>Lab Session 1</h2>
+          <ol>
+            <li>Create groups of about 3-5 students per group.</li>
+            <li>
+              Give each group some letters from the alphabet. Make sure that
+              each letter is represented in at least one group.
+            </li>
+            <li>
+              Give students 5-10 minutes to brainstorm words that represent
+              computer science topics or concepts for their letters. For the
+              more challenging letters, encourage students to think about the
+              names of assignments or problems they have done as well.
+            </li>
+            <li>
+              Ask each group to narrow down one word per letter for each of
+              their letters.
+            </li>
+            <li>
+              Give students about 10 minutes to brainstorm how they would like
+              to photograph each word.
+            </li>
+            <li>The rest of class time will be used for taking photos.</li>
+            <li>
+              Students should send their photos to their lab instructor before
+              the next lab session.
+            </li>
+          </ol>
+        </div>
+        <div class="lab" id='lab2' data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+          <h2>Lab Session 2</h2>
+          <ol>
+            <li>
+              Before this lab session, lab instructors should print out all
+              photos that were taken.
+            </li>
+            <li>Return the printed photos to their respective groups.</li>
+            <li>
+              Have students glue each photo to one piece of construction paper
+              and then write or draw something to go along with the photo. This
+              could be a code snippet, a visualization of some sort, a story, or
+              anything else that relates to the photo.
+            </li>
+            <li>
+              Leave at least 15 minutes at the end to put the alphabet in order
+              and display it on the walls of the classroom. Let students walk
+              around and look at the completed alphabet.
+            </li>
+            <li>
+              After the lab session is over, scan each letter to save it
+              electronically. Give students access to all the alphabets created
+              from every lab session to use as a study tool.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs101-inspiration">
+      <h1>
+        <span class="initial-dark">I</span>nspiration and
+        <span class="initial-dark">R</span>ationale
+      </h1>
+      <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        The idea for this project came about when Regan was a Teaching Associate
+        (TA) for the introductory computer science course at Duke University.
+        Currently, there are not many personal connections that can be made
+        between students and the computer science curriculum. Additionally,
+        students sometimes feel discouraged when they do not understand
+        concepts. The goal of implementing this LTP project in an introductory
+        computer science class is that students will feel more connected to the
+        material as well as more confident in their technical abilities.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        Regan enjoys being a TA for the introductory computer science course.
+        She would love to work with this community on this project because she
+        wants to help students feel more confident in their abilities to learn
+        fundamental computer science concepts. As a software engineer, this
+        theme appeals to Regan because she uses core concepts of computer
+        science almost everyday. The ABCs of CS101 project will help students in
+        the introductory class solidify their knowledge of these concepts,
+        hopefully encouraging them to pursue other computer science courses as
+        well.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+        As with any project, some challenges may arise when carrying it out. For
+        this project, time may present itself to be a challenge. There is often
+        a lot of material to get through, and the professors might not be able
+        to devote enough time to implement this LTP project. If time is a
+        concern, the project could be an extra credit opportunity for students
+        to encourage them to participate. Additionally, this project may be
+        logistically challenging in terms of collecting all the photos and
+        distributing them to the appropriate lab section; however, since the
+        introductory computer science course at Duke has a large teaching staff
+        and lots of TAs, tasks can be divided up accordingly to ensure that
+        photos end up in the correct labs.
+      </p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../js/home.js"></script>
+  </body>
 </html>

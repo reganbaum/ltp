@@ -1,0 +1,174 @@
+.nav-and-cs101 {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.8)
+    ),
+    url("../images/cs101-landing.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+.cs101-landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cs101-header {
+  font-family: "Cabin Sketch", sans-serif;
+  color: white;
+  -webkit-text-stroke: 0.5px white;
+  font-size: 10rem;
+  margin: 6rem 2rem -2rem;
+  line-height: 10rem;
+}
+
+.cs101-desc {
+  margin: 3rem 4rem;
+  width: 60%;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.6rem;
+}
+
+.cs101-desc > h2,
+.cs101-desc > h3 {
+  color: white;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 500;
+  margin: 1rem;
+}
+
+#g1 {
+  grid-area: g1;
+}
+
+#g2 {
+  grid-area: g2;
+}
+
+#g3 {
+  grid-area: g3;
+}
+
+.goal {
+  background-color: #f8f8f8;
+  border: 6px solid #333;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0;
+  width: 80%;
+}
+
+.goals-grid {
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-areas:
+    "g1 . ."
+    ". g2 ."
+    ". . g3";
+}
+
+.cs101-details {
+  background-image: linear-gradient(#333, rgb(124, 124, 124));
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.details-title {
+  color: white;
+  border-bottom: 0.5rem solid white;
+  -webkit-text-stroke: 0px;
+}
+
+.initial {
+  -webkit-text-stroke: 0px;
+}
+
+.flip-card h1 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.flip-card h2 {
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.flip-card {
+  transition: 0.5s transform, 0.5s border;
+}
+
+.flip-card:hover {
+  transform: scale(1.15);
+}
+
+.flip-card-back {
+  background-image: linear-gradient(120deg, #e9f2f8, #c7ced3);
+}
+
+.cs101-materials h2 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+.cs101-materials h1 {
+  margin-bottom: 2.5rem;
+}
+
+.labs-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #333;
+  margin-top: 2rem;
+}
+
+.labs-container h2 {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.labs-container li {
+  font-size: 14pt;
+}
+
+.lab {
+  width: 42%;
+  height: 90%;
+  background-color: #f8f8f8;
+  text-align: left;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+}
+
+.cs101-inspiration {
+  height: unset;
+}
+
+.cs101-inspiration p {
+  text-align: justify;
+  margin: 1.5rem 4rem 0;
+  width: 55%;
+  color: #333;
+  font-size: 14pt;
+  line-height: 22pt;
+}
+
+.cs101-inspiration p:last-child {
+  margin-bottom: 3rem;
+}
