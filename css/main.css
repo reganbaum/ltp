@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Ribeye+Marrow|Wellfleet&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:700|Ribeye+Marrow|Wellfleet&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sarabun:100,200,300,400,500,600,700,800&display=swap");
 
 * {
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
@@ -18,15 +18,15 @@ body {
 }
 
 .nav-link {
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-size: 1.5rem;
 }
 
 .ltp-logo {
-  font-family: 'Cabin Sketch', sans-serif;
+  font-family: "Cabin Sketch", sans-serif;
   font-size: 3rem;
-  -webkit-text-stroke: .5px;
-  transition: .1s ease-in-out color;
+  -webkit-text-stroke: 0.5px;
+  transition: 0.1s ease-in-out color;
 }
 
 .ltp-logo:hover {
@@ -96,7 +96,8 @@ section > h2 {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -105,7 +106,7 @@ section > h2 {
   justify-content: center;
   align-items: center;
   border-radius: 2rem;
-  box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Style the front side */

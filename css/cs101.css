@@ -80,10 +80,10 @@
 
 .cs101-details {
   background-image: linear-gradient(
-    rgba(15, 15, 15, 0.8),
-    rgba(15, 15, 15, 0.8)
-  ),
-  url("../images/cs101-details.jpg");
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.8)
+    ),
+    url("../images/cs101-details.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -91,10 +91,10 @@
 
 .cs101-steps {
   background-image: linear-gradient(
-    rgba(15, 15, 15, 0.8),
-    rgba(15, 15, 15, 0.8)
-  ),
-  url("../images/cs101-steps.jpg");
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.8)
+    ),
+    url("../images/cs101-steps.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -130,7 +130,10 @@
   background-image: linear-gradient(120deg, #e9e9e9, #b4b4b4 100%);
 }
 
-.cs101-details, .cs101-goals, .cs101-materials, .cs101-steps {
+.cs101-details,
+.cs101-goals,
+.cs101-materials,
+.cs101-steps {
   height: unset;
   padding-bottom: 3.3rem;
 }
@@ -169,7 +172,7 @@
   text-align: left;
   border-radius: 2rem;
   padding: 1.5rem;
-  box-shadow: 5px 5px 15px rgba(0,0,0,.7);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .cs101-inspiration {
