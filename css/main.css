@@ -74,8 +74,8 @@ section > h2 {
 /* The flip card container - set the width and height to whatever you want.*/
 .flip-card {
   background-color: transparent;
-  width: 18rem;
-  height: 24rem;
+  width: 16rem;
+  height: 16rem;
   perspective: 1000px;
   margin: 2rem;
 }
@@ -92,7 +92,7 @@ section > h2 {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) scale(1.15);
 }
 
 /* Position the front and back side */
@@ -119,4 +119,18 @@ section > h2 {
   background-color: #f8f8f8;
   color: #333;
   transform: rotateY(180deg);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 16rem);
+    grid-gap: 3rem;
+  }
+
+  .flip-card {
+    margin: 0;
+  }
 }

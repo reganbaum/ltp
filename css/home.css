@@ -77,7 +77,8 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
-  height: 100vh;
+  height: unset;
+  padding-bottom: 3rem;
 }
 
 #benefits > h1 {
@@ -162,11 +163,16 @@
   background-color: rgba(0,0,0,.3);
   display: none;
   border-radius: .6rem;
-  margin: 3rem;
+  margin: 3rem 3rem 0;
 }
 
 .home-projects {
   height: 100vh;
+}
+
+#projects {
+  height: unset;
+  padding-bottom: 4rem;
 }
 
 #projects > h2 {
@@ -176,7 +182,9 @@
 
 .proj-container {
   display: grid;
-  grid-template-columns: repeat(3, 11rem);
+  /* TODO: change when adding more projects */
+  /* grid-template-columns: repeat(3, 11rem); */
+  grid-template-columns: repeat(1, 11rem);
   grid-gap: 2rem;
   justify-content: center;
 }
@@ -232,4 +240,39 @@
 
 a:hover {
   text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (min-width: 700px) and (max-width: 950px) {
+  .button-container {
+    grid-template-areas:
+      "ben1 ben2"
+      "ben3 ben4"
+      "ben5 ben6";
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .button-container {
+    grid-template-areas:
+      "ben1"
+      "ben2"
+      "ben3"
+      "ben4"
+      "ben5"
+      "ben6";
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .proj-container {
+    /* grid-template-columns: repeat(2, 11rem); */
+    grid-template-columns: repeat(1, 11rem);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .proj-container {
+    grid-template-columns: repeat(1, 11rem);
+  }
 }
